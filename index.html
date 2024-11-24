@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/df24a9c160.js" crossorigin="anonymous"></script>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fav -->
+    <link rel="icon" type="image/x-icon" href="images/11zon_cropped.png">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="card">
+        <!-- Search section -->
+        <div class="search">
+            <input type="text" id="city-name" placeholder="Enter city name" spellcheck="false" autocomplete="on">
+            <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <!-- Weather details section -->
+        <div class="weather">
+            <img src="images/sun.webp" alt="weather icon" class="weather-icon" id="weather-icon">
+            <h1 class="temp" id="temp">00°C</h1>
+            <div class="city" id="city">EGYPT</div>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="humidity" class="humidity-icon">
+                    <div>
+                        <p class="humidity" id="humidity">00%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="wind speed" class="wind-icon">
+                    <div>
+                        <p class="wind" id="wind">00%</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JS file -->
+    <script src="main.js"></script>
+</body>
+
+</html>
